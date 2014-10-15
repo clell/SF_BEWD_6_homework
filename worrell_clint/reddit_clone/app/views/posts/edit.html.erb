@@ -1,5 +1,9 @@
 <h1>Edit Post</h1>
 
+<% @post.errors.full_messages.each do |err| %>
+  <li><%= err %></li>
+<% end %>
+
 <%= form_for @post do |f| %>
   <%= f.label :title %><br>
   <%= f.text_field :title %><br><br>
