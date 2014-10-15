@@ -11,7 +11,7 @@
     <td><%= post.votes %></td>
     <td><%= link_to "Details", post_path(post) %></td>
     <td><%= link_to "Edit", edit_post_path(post) %></td>
-    <td><%= link_to "Remove", post_path(post), method: :delete, data: { confirm: "Are you sure"} %></td>
+    <td><%= link_to "Remove", post_path(post), method: :delete, data: { confirm: "Are you sure?" } %></td>
     <td><%= button_to "Upvote", new_post_path %></td>
     <td><%= button_to "Downvote", new_post_path %></td>
   </tr>
