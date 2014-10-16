@@ -9,11 +9,11 @@
   <tr>
     <td><a href=<%= post.url %>><%= post.title %></a></td>
     <td><%= post.votes %></td>
+    <td><%= button_to "Upvote", post_path(post, :post => { :votes => (post.votes.to_i + 1)}), method: :patch  %></td>
+    <td><%= button_to "Downvote",  post_path(post, :post => { :votes => (post.votes.to_i - 1)}), method: :patch  %></td>    
     <td><%= link_to "Details", post_path(post) %></td>
     <td><%= link_to "Edit", edit_post_path(post) %></td>
     <td><%= link_to "Remove", post_path(post), method: :delete, data: { confirm: "Are you sure?" } %></td>
-    <td><%= button_to "Upvote", new_post_path %></td>
-    <td><%= button_to "Downvote", new_post_path %></td>
   </tr>
 <% end %>
 </table>
