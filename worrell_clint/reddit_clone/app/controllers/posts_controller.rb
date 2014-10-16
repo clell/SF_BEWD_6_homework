@@ -41,8 +41,13 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def vote
+    @post = Post.find(params[:id])
+    redirect_to posts_path
+  end
+
   private
     def post_params
-      params.require(:post).permit(:title, :url)
+      params.require(:post).permit(:title, :url, :votes)
     end
 end
