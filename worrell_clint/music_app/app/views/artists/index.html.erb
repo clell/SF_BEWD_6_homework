@@ -4,6 +4,11 @@
 <% @artists.each do |artist| %>
   <tr>
     <td><%= artist.name %></td>
+    <td><%= link_to "Songs", artist_songs_path(artist) %>
+    <td><%= link_to "Edit", edit_artist_path(artist) %>
+    <td><%= link_to "Delete", artist_path(artist), method: :delete, data: { confirm: "Are you sure?"} %></td>
   </tr>
 <% end %>
 </table>
+<br>
+<%= link_to "Add Artist", new_artist_path %>
