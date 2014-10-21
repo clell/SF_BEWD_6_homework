@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Artist.create(:name => 'Talking Heads')
-Artist.create(:name => "Lil' Jon")
-Artist.create(:name => 'Fleetwood Mac')
-Artist.create(:name => 'Yumi Zouma')
+# Artist.create(:name => 'Talking Heads')
+# Artist.create(:name => "Lil' Jon")
+# Artist.create(:name => 'Fleetwood Mac')
+# Artist.create(:name => 'Yumi Zouma')
