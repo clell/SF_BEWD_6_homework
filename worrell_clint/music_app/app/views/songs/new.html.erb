@@ -1,0 +1,7 @@
+<h1><%= @artist.name %> - Add Song</h1>
+
+<%= form_for ([@artist, @artist.songs.new]) do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title, autofocus: true, placeholder: "Enter song title" %>
+  <%= f.submit %>
+<% end %>
