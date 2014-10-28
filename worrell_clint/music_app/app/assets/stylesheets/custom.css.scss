@@ -1,0 +1,26 @@
+@import "bootstrap";
+// @import url(http://fonts.googleapis.com/css?family=Rock+Salt|Permanent+Marker|Oswald);
+@import url(http://fonts.googleapis.com/css?family=Oswald|Rock+Salt);
+
+.oswald_font {
+  font-family: 'Oswald', sans-serif;
+}
+
+.rock_salt_font {
+  font-family: 'Rock Salt', cursive;
+}
+
+.home_page_logo {
+  font-family: 'Rock Salt', cursive;
+  padding: 50px;
+  font-size: 75px;
+  text-align: center;
+}
+
+.clint_blue {
+  color: #003366;
+}
+
+.btn-clint_blue{
+  background-color: #003366
+}

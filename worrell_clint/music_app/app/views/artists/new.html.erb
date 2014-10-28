@@ -1,7 +1,8 @@
-<h1>Create New Artist</h1>
+<div class="col-xs-12">
 
-<%= form_for @artist do |f| %>
-  <%= f.label :name %><br>
-  <%= f.text_field :name, autofocus: true, placeholder: "Enter artist name" %>
-  <%= f.submit %>
-<% end %>
+<div class="col-xs-6 col-xs-offset-3">
+
+<h1>Create New Artist</h1>
+<%= render 'form' %>
+</div>
+</div>
